@@ -1,4 +1,5 @@
 ../eagle \
+    --vcfOutFormat=z \
     --vcf=EUR_test.vcf.gz \
     --geneticMapFile=../tables/genetic_map_hg19_withX.txt.gz \
     --chrom=21 \

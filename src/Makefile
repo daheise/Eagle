@@ -13,8 +13,8 @@ BLAS_DIR = /n/app/openblas/0.2.19/lib # or /n/groups/price/poru/external_softwar
 
 BOOST_INSTALL_DIR = /home/pl88/boost_1_58_0/install
 # boost_1_58_0 was installed using GCC 4.8.5?
-
-HTSLIB_DIR = /n/groups/price/poru/external_software/htslib/htslib-1.9
+#HTSLIB_DIR = /n/groups/price/poru/external_software/htslib/htslib-1.9
+HTSLIB_DIR = ../../htslib
 ### NOTE: to reduce dependencies from htslib, configure htslib with: ./configure --disable-bz2 --disable-lzma --disable-plugins --disable-libcurl --disable-gcs --disable-s3
 
 ### only for static linking (unnecessary in a local install; probably unnecessary on most systems)
@@ -96,7 +96,7 @@ endif
 
 
 T = eagle
-O = DipTreePBWT.o Eagle.o EagleImpMiss.o EagleParams.o EaglePBWT.o FileUtils.o GenoData.o HapHedge.o MapInterpolater.o MemoryUtils.o NumericUtils.o StaticMultimap.o StringUtils.o SyncedVcfData.o Timer.o memcpy.o
+O = DipTreePBWT.o Eagle.o EagleImpMiss.o EagleParams.o EaglePBWT.o FileUtils.o GenoData.o HapHedge.o MapInterpolater.o MemoryUtils.o NumericUtils.o StaticMultimap.o StringUtils.o SyncedVcfData.o Timer.o
 OMAIN = EagleMain.o $O
 
 .PHONY: clean
